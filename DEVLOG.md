@@ -57,10 +57,30 @@ If objective 1 slips, do not start 2 or 3. A green compile beats a half pawn.
 
 ## Close — 2026-10-04
 
+Docs only. Commit `42ee41c` locked the uproject as the one feature. No `.uproject`, no `Diabolic.Build.cs`, no `DiabolicEditor.Target.cs`, no editor compile. Objectives 2 and 3 not started. Correct call.
+
+## Review — 2026-10-06 morning (yesterday = 2026-10-05)
+
+No commit on 2026-10-05. HEAD is `42ee41c` (2026-10-04 01:29 PDT), docs only.
+
+Tree under `ue/` is still four combat files plus `MAC_M4_BUILD.md`. Missing: `Diabolic.uproject`, module Build.cs, Editor/Game targets, DefaultEngine.ini. Combat math is unlinked source.
+
+Oct 5 draft bullets were not rewritten at close and were not shipped. Same blocker as Oct 3 and Oct 4.
+
+## 2026-10-06 objectives
+
+1. Deep work (one feature): on the M4 Max, blank C++ `Diabolic` (UE 5.5 arm64, no starter content), drop in `ue/Source/Diabolic/Combat/*`, add GameplayAbilities to Build.cs and `.uproject`, GenerateProjectFiles, `Build.sh DiabolicEditor Mac Development`. Done = editor opens and the module links. Commit the project files (not Binaries/Intermediate/DerivedDataCache).
+2. Polish only if compile is green: isometric pawn, click-to-move, one melee trace into `UDiabolicDamageExecution`.
+3. Polish only if the trace lands: Act I scarab with a health bar bound to `Health` / `MaxHealth`.
+
+If 1 slips, do not start 2 or 3. Do not open Discord, X, or the Next.js landing page.
+
+## Close — 2026-10-06
+
 Pending end-of-day commit.
 
-## 2026-10-05 bullets (draft, rewrite at close)
+## 2026-10-07 bullets (draft, rewrite at close)
 
-1. If compile failed yesterday, that is still the only feature.
-2. If compile is green, ship the click-to-move melee trace.
+1. If compile failed today, that is still the only feature.
+2. If compile is green, ship click-to-move melee into the damage execution.
 3. Bind the scarab bar, then one loot drop that reads the same attribute set.
