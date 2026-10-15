@@ -203,3 +203,23 @@ Oct 12 bullets were written and not shipped. Same as every day since Oct 3. Twel
 3. Polish only if the trace lands: Act I scarab with a health bar bound to `Health` / `MaxHealth`.
 
 If 1 slips, do not start 2 or 3. Green compile is the only shippable artifact. No more log entries until the module links.
+
+## Review — 2026-10-15 morning (yesterday = 2026-10-14)
+
+Yesterday's commit: `6d6e3ca` — `docs: 2026-10-14 DEVLOG — Oct 13 no commit, lock uproject compile as the only feature`.
+Author MatryxX, 2026-10-14 09:09 PDT. Diff is DEVLOG text only. Tree under `ue/` is still `MAC_M4_BUILD.md` plus four combat sources. No `Diabolic.uproject`.
+
+Oct 14 bullets were written and not shipped. Same as every day since Oct 3. Thirteenth calendar day on the same blocker. Do not write a new feature. The editor link is still the product. Combat math still unlinked since `c98101c`.
+
+## 2026-10-15 objectives
+
+1. Deep work (one feature, 3–5 hrs, no Discord, no X, no landing page): on the M4 Max, Epic Launcher → UE 5.5 → Blank C++ `Diabolic` desktop no starter. Close editor. Copy combat sources. Add modules to Build.cs. Enable plugin. Then:
+   ```
+   "/Users/Shared/Epic Games/UE_5.5/Engine/Build/BatchFiles/Mac/GenerateProjectFiles.sh" -project="$HOME/dev/Diabolic/Diabolic.uproject" -game
+   "/Users/Shared/Epic Games/UE_5.5/Engine/Build/BatchFiles/Mac/Build.sh" DiabolicEditor Mac Development -project="$HOME/dev/Diabolic/Diabolic.uproject"
+   ```
+   Done = editor opens and the module links. Commit project files only (not Binaries/Intermediate/DerivedDataCache). Copy the generated project files back into `ue/` in this repo.
+2. Polish only if compile is green (2–4 hrs): isometric pawn, click-to-move, one melee trace into `UDiabolicDamageExecution`.
+3. Polish only if the trace lands: Act I scarab with a health bar bound to `Health` / `MaxHealth`.
+
+If 1 slips, do not start 2 or 3. Green compile is the only shippable artifact. No more log entries until the module links.
