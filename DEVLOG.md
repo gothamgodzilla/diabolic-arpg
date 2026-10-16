@@ -243,3 +243,26 @@ Oct 15 bullets were written and not shipped. Same as every day since Oct 3. Four
 3. Polish only if the trace lands: Act I scarab with a health bar bound to `Health` / `MaxHealth`.
 
 If 1 slips, do not start 2 or 3. Green compile is the only shippable artifact. No more log entries until the module links.
+
+## Close — 2026-10-16
+
+Docs only so far. Morning commit `6a7a522` rewrote the log. No `.uproject`, no Build.cs, no targets, no editor compile. Objectives 2 and 3 not started. Fifteenth calendar day on the same blocker. Combat math still unlinked since `c98101c`. Correct call.
+
+## Review — 2026-10-17 morning (yesterday = 2026-10-16)
+
+Latest commit still docs-only (`6a7a522`). Tree under `ue/` unchanged. No real UE progress.
+
+Oct 16 bullets were written and not shipped. Same as every day since Oct 3. Sixteenth calendar day on the same blocker. Do not write a new feature. The editor link is still the product.
+
+## 2026-10-17 objectives
+
+1. Deep work (one feature, 3–5 hrs, no Discord, no X, no landing page): on the M4 Max, Epic Launcher → UE 5.5 → Blank C++ `Diabolic` desktop no starter. Close editor. Copy combat sources. Add modules to Build.cs. Enable plugin. Then:
+   ```
+   "/Users/Shared/Epic Games/UE_5.5/Engine/Build/BatchFiles/Mac/GenerateProjectFiles.sh" -project="$HOME/dev/Diabolic/Diabolic.uproject" -game
+   "/Users/Shared/Epic Games/UE_5.5/Engine/Build/BatchFiles/Mac/Build.sh" DiabolicEditor Mac Development -project="$HOME/dev/Diabolic/Diabolic.uproject"
+   ```
+   Done = editor opens and the module links. Commit project files only (not Binaries/Intermediate/DerivedDataCache). Copy the generated project files back into `ue/` in this repo.
+2. Polish only if compile is green (2–4 hrs): isometric pawn, click-to-move, one melee trace into `UDiabolicDamageExecution`.
+3. Polish only if the trace lands: Act I scarab with a health bar bound to `Health` / `MaxHealth`.
+
+If 1 slips, do not start 2 or 3. Green compile is the only shippable artifact. No more log entries until the module links.
