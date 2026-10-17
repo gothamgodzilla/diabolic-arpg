@@ -246,13 +246,14 @@ If 1 slips, do not start 2 or 3. Green compile is the only shippable artifact. N
 
 ## Close — 2026-10-16
 
-Docs only so far. Morning commit `6a7a522` rewrote the log. No `.uproject`, no Build.cs, no targets, no editor compile. Objectives 2 and 3 not started. Fifteenth calendar day on the same blocker. Combat math still unlinked since `c98101c`. Correct call.
+Docs only. Commit `5d29808` (2026-10-16 09:10 PDT) rewrote the log with Oct 16 close + Oct 17 objectives. No `.uproject`, no Build.cs, no targets, no editor compile. Objectives 2 and 3 not started. Sixteenth calendar day on the same blocker. Combat math still unlinked since `c98101c`. Correct call.
 
 ## Review — 2026-10-17 morning (yesterday = 2026-10-16)
 
-Latest commit still docs-only (`6a7a522`). Tree under `ue/` unchanged. No real UE progress.
+Latest commit: `5d29808` — `docs: 2026-10-16 close + 2026-10-17 DEVLOG — still docs only, lock uproject compile as the only feature`.
+Author MatryxX, 2026-10-16 09:10 PDT. Diff is DEVLOG text only. Tree under `ue/` is still `MAC_M4_BUILD.md` plus four combat sources. No `Diabolic.uproject`.
 
-Oct 16 bullets were written and not shipped. Same as every day since Oct 3. Sixteenth calendar day on the same blocker. Do not write a new feature. The editor link is still the product.
+Oct 16 bullets were written and not shipped. Same as every day since Oct 3. Seventeenth calendar day on the same blocker. Do not write a new feature. The editor link is still the product. Combat math still unlinked since `c98101c`.
 
 ## 2026-10-17 objectives
 
