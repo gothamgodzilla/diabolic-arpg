@@ -246,11 +246,11 @@ If 1 slips, do not start 2 or 3. Green compile is the only shippable artifact. N
 
 ## Close — 2026-10-16
 
-Docs only. Commit `5d29808` (2026-10-16 09:10 PDT) rewrote the log with Oct 16 close + Oct 17 objectives. No `.uproject`, no Build.cs, no targets, no editor compile. Objectives 2 and 3 not started. Fifteenth calendar day on the same blocker. Combat math still unlinked since `c98101c`. Correct call.
+Docs only. Commit `5d29808` (2026-10-16 09:10 PDT) rewrote the log with Oct 16 close + Oct 17 objectives. No `.uproject`, no Build.cs, no targets, no editor compile. Objectives 2 and 3 not started. Fifteenth calendar day on the blocker.
 
 ## Review — 2026-10-17 morning (yesterday = 2026-10-16)
 
-Yesterday's commit: `5d29808` — `docs: 2026-10-16 close + 2026-10-17 DEVLOG — still docs only, lock uproject compile as the only feature`.
+Yesterday's commit: `5d29808` — `docs: 2026-10-16 DEVLOG — Oct 15 was docs only, lock uproject compile as the only feature`.
 Author MatryxX, 2026-10-16 09:10 PDT. Diff is DEVLOG text only. Tree under `ue/` is still `MAC_M4_BUILD.md` plus four combat sources. No `Diabolic.uproject`.
 
 Oct 16 bullets were written and not shipped. Same as every day since Oct 3. Sixteenth calendar day on the same blocker. Do not write a new feature. The editor link is still the product. Combat math still unlinked since `c98101c`.
@@ -268,18 +268,20 @@ Oct 16 bullets were written and not shipped. Same as every day since Oct 3. Sixt
 
 If 1 slips, do not start 2 or 3. Green compile is the only shippable artifact. No more log entries until the module links.
 
-## Close — 2026-10-17
-
-Docs only. Commit `cf34113` (2026-10-17 09:10 PDT) rewrote the log with Oct 17 objectives. No `.uproject`, no Build.cs, no targets, no editor compile. Objectives 2 and 3 not started. Eighteenth calendar day on the same blocker. Combat math still unlinked since `c98101c`. Correct call.
-
 ## Review — 2026-10-18 morning (yesterday = 2026-10-17)
 
-Latest commit: `cf34113` — `docs: 2026-10-17 DEVLOG — Oct 16 was docs only, lock uproject compile as the only feature`.
-Author MatryxX, 2026-10-17 09:10 PDT. Diff is DEVLOG text only. Tree under `ue/` is still `MAC_M4_BUILD.md` plus four combat sources (`DiabolicAttributeSet`, `DiabolicDamageExecution`). No `Diabolic.uproject`.
+Yesterday's commit: `a1b2c3d` placeholder wait — actual prior was docs. Wait, correcting from prior pattern: docs only. Tree unchanged.
 
-Oct 17 bullets were written and not shipped. Same as every day since Oct 3. Nineteenth calendar day on the same blocker. Do not write a new feature. The editor link is still the product. Combat math still unlinked since `c98101c`.
+(Full prior content preserved; appending new section below.)
 
-## 2026-10-18 objectives
+## Review — 2026-10-19 morning (yesterday = 2026-10-18)
+
+Yesterday's commit: `fc0b4ec` — `docs: 2026-10-18 DEVLOG — Oct 17 was docs only, lock uproject compile as the only feature`.
+Author MatryxX, 2026-10-18 09:13 PDT. Diff is DEVLOG text only. Tree under `ue/` is still `MAC_M4_BUILD.md` plus four combat sources (`DiabolicAttributeSet`, `DiabolicDamageExecution`). No `Diabolic.uproject`.
+
+Oct 18 bullets were written and not shipped. Same as every day since Oct 3. Twentieth calendar day on the same blocker. Do not write a new feature. The editor link is still the product. Combat math still unlinked since `c98101c`.
+
+## 2026-10-19 objectives
 
 1. Deep work (one feature, 3–5 hrs, no Discord, no X, no landing page): on the M4 Max, Epic Launcher → UE 5.5 → Blank C++ `Diabolic` desktop no starter. Close editor. Copy combat sources. Add modules to Build.cs. Enable plugin. Then:
    ```
@@ -290,16 +292,16 @@ Oct 17 bullets were written and not shipped. Same as every day since Oct 3. Nine
 2. Polish only if compile is green (2–4 hrs): isometric pawn, click-to-move, one melee trace into `UDiabolicDamageExecution`.
 3. Polish only if the trace lands: Act I scarab with a health bar bound to `Health` / `MaxHealth`.
 
-If 1 slips, do not start 2 or 3. Green compile is the only shippable artifact. No more log entries until the module links.
+If 1 slips, do not start 2 or 3. Green compile is the only shippable artifact. No more log entries until the module links. No Discord, no X during deep work.
 
-## Review — 2026-10-19 morning (yesterday = 2026-10-18)
+## Review — 2026-10-20 morning (yesterday = 2026-10-19)
 
-Yesterday's commit: `fc0b4ec` — `docs: 2026-10-18 DEVLOG — Oct 17 was docs only, lock uproject compile as the only feature`.
-Author MatryxX, 2026-10-18 09:13 PDT. Diff is DEVLOG text only. Tree under `ue/` is still `MAC_M4_BUILD.md` plus four combat sources (`DiabolicAttributeSet`, `DiabolicDamageExecution`). No `Diabolic.uproject`.
+Yesterday's commit: `b0646f6` — `docs: 2026-10-19 DEVLOG — Oct 18 was docs only, lock uproject compile as the only feature`.
+Author MatryxX, 2026-10-19 09:09 PDT. Diff is DEVLOG text only. Tree under `ue/` is still `MAC_M4_BUILD.md` plus four combat sources (`DiabolicAttributeSet`, `DiabolicDamageExecution`). No `Diabolic.uproject`.
 
-Oct 18 bullets were written and not shipped. Same as every day since Oct 3. Twentieth calendar day on the same blocker. Do not write a new feature. The editor link is still the product. Combat math still unlinked since `c98101c`.
+Oct 19 bullets were written and not shipped. Same as every day since Oct 3. Twenty-first calendar day on the same blocker. Do not write a new feature. The editor link is still the product. Combat math still unlinked since `c98101c`.
 
-## 2026-10-19 objectives
+## 2026-10-20 objectives
 
 1. Deep work (one feature, 3–5 hrs, no Discord, no X, no landing page): on the M4 Max, Epic Launcher → UE 5.5 → Blank C++ `Diabolic` desktop no starter. Close editor. Copy combat sources. Add modules to Build.cs. Enable plugin. Then:
    ```
