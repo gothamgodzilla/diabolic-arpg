@@ -385,3 +385,35 @@ Oct 22 bullets were written and not shipped. Same as every day since Oct 3. Twen
 3. Polish only if the trace lands: Act I scarab with a health bar bound to `Health` / `MaxHealth`.
 
 If 1 slips, do not start 2 or 3. Green compile is the only shippable artifact. No more log entries until the module links. No Discord, no X during deep work.
+## 2026-10-24
+
+### Review (latest commit)
+- `101c511`: `docs: 2026-10-23 DEVLOG — Oct 22 was docs only, lock uproject compile as the only feature`. Author MatryxX, 2026-10-23 09:14 PDT. One file changed: `DEVLOG.md` (+47 / −10). **Docs only. No UE progress.**
+- Tree under `ue/` is still `MAC_M4_BUILD.md` plus four combat sources (`Source/Diabolic/Combat/DiabolicAttributeSet.{h,cpp}`, `DiabolicDamageExecution.{h,cpp}`).
+
+### Blocker status (from the repo)
+- `Diabolic.uproject`: **not present** anywhere in the repo.
+- `Diabolic.Build.cs`: **not present**, so GameplayAbilities / GameplayTags / GameplayTasks are not listed anywhere.
+- GameplayAbilities plugin: not enabled (no uproject exists).
+- Green compile: **unverified**. There's no evidence of a build in the repo.
+
+### Objectives
+1. Deep work (one feature, no Discord, no X): create `Diabolic.uproject` (UE 5.5 Blank C++, desktop, no starter). Copy the combat sources, add `GameplayAbilities`, `GameplayTags` and `GameplayTasks` to `Diabolic.Build.cs`, enable the GameplayAbilities plugin, then run `GenerateProjectFiles.sh` and `Build.sh DiabolicEditor Mac Development` until it's green.
+2. Polish (only if 1 is green): pawn + melee hookup (isometric pawn, click-to-move, one melee trace into `UDiabolicDamageExecution`).
+3. Polish (only if 1 is green): Act I scarab enemy with a health bar bound to `Health` / `MaxHealth`.
+
+### Notes
+- No Discord and no X during deep work.
+- Green compile is the only shippable artifact.
+- Copy the project back to repo `ue/`, excluding `Binaries/`, `Intermediate/`, `Saved/` and `DerivedDataCache/`.
+
+Exact Mac commands:
+```
+# Epic Launcher → UE 5.5 → Blank C++ "Diabolic", desktop, no starter content. Close editor.
+# Copy ue/Source/Diabolic/Combat into the project. Add modules to Diabolic.Build.cs. Enable GameplayAbilities plugin.
+"/Users/Shared/Epic Games/UE_5.5/Engine/Build/BatchFiles/Mac/GenerateProjectFiles.sh" -project="$HOME/dev/Diabolic/Diabolic.uproject" -game
+"/Users/Shared/Epic Games/UE_5.5/Engine/Build/BatchFiles/Mac/Build.sh" DiabolicEditor Mac Development -project="$HOME/dev/Diabolic/Diabolic.uproject"
+```
+
+### Tomorrow (2026-10-25)
+- _TBD at end of day. Fill in after the compile result._
