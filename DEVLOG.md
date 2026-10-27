@@ -485,3 +485,26 @@ Exact Mac commands:
 
 ### Tomorrow (2026-10-28)
 - _TBD at end of day. Fill in after the compile result._
+
+
+## Review — 2026-10-27 (latest commit 11d3415)
+
+Latest commit: `11d3415` (2026-10-27 ~07:06 PDT) — `devlog: 2026-10-27 review of eabf580 (docs-only) + objectives (uproject/GAS compile, then hit-feedback component)`. Docs only. No UE progress. `ue/` tree unchanged: still only `MAC_M4_BUILD.md` + four combat sources. No `Diabolic.uproject`, no Build.cs, no targets. Combat sources remain unlinked since `c98101c`.
+
+Blocker remains: create `Diabolic.uproject` + compile the module so combat sources link.
+
+## 2026-10-27 objectives
+
+1. Deep work (one feature, 3–5 hrs, no Discord, no X): uproject + GameplayAbilities compile on the M4 Max (still missing). Epic Launcher → UE 5.5 → Blank C++ Diabolic desktop no starter. Close editor. Copy combat sources. Add modules to Build.cs. Enable plugin. Then GenerateProjectFiles.sh and Build.sh DiabolicEditor Mac Development. Done = green compile, editor opens, module links. Once green, next real feature only.
+2. Polish only if 1 is green: isometric pawn, click-to-move, one melee trace into `UDiabolicDamageExecution`.
+3. Polish only if the trace lands: Act I scarab with health bar bound to `Health` / `MaxHealth`.
+
+If 1 slips, do not start 2 or 3. Green compile is the only shippable artifact. Copy project files back to repo `ue/` excluding Binaries/Intermediate/Saved/DerivedDataCache.
+
+Exact Mac commands if still blocked:
+```
+# Epic Launcher → UE 5.5 → Blank C++ "Diabolic", desktop, no starter content. Close editor.
+# Copy ue/Source/Diabolic/Combat into the project. Add GameplayAbilities, GameplayTags, GameplayTasks to Diabolic.Build.cs. Enable GameplayAbilities plugin in .uproject.
+"/Users/Shared/Epic Games/UE_5.5/Engine/Build/BatchFiles/Mac/GenerateProjectFiles.sh" -project="$HOME/dev/Diabolic/Diabolic.uproject" -game
+"/Users/Shared/Epic Games/UE_5.5/Engine/Build/BatchFiles/Mac/Build.sh" DiabolicEditor Mac Development -project="$HOME/dev/Diabolic/Diabolic.uproject"
+```
