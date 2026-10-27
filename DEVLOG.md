@@ -448,3 +448,40 @@ Exact Mac commands:
 
 ### Tomorrow (2026-10-27)
 - _TBD at end of day. Fill in after the compile result._
+
+## 2026-10-27
+
+### Review (latest commit)
+- `eabf580`: `devlog: 2026-10-26 review of dcc86036 (docs-only) + objectives (uproject/GAS compile blocker remains)`. Committed 2026-10-26 09:17 PDT. Only `DEVLOG.md` changed (+450 / −1). **Docs only. No UE progress.**
+- Prior: `8104e25` (2026-10-26 09:14 PDT) was also `DEVLOG.md` only (+1 / −485), and `dcc8603` before it was docs-only. No commits touch `ue/` since the four combat sources landed.
+- Repo status: one branch (`main`), no open PRs. `ue/` is unchanged: `MAC_M4_BUILD.md` plus the four combat sources (`DiabolicAttributeSet.{h,cpp}`, `DiabolicDamageExecution.{h,cpp}`).
+
+### Blocker status (from the repo)
+- `Diabolic.uproject`: **not present**.
+- `Diabolic.Build.cs`: **not present**, so the GameplayAbilities / GameplayTags / GameplayTasks modules aren't listed anywhere.
+- GameplayAbilities plugin: not enabled.
+- Green compile: **unverified**. There's no evidence of a build in the repo.
+
+### Objectives
+- [ ] 1. Deep work (3–5 hrs, no Discord, no X): uproject + GAS green compile on the M4 Max (still missing). Create `Diabolic.uproject` (UE 5.5 Blank C++, desktop, no starter), copy the combat sources, add `GameplayAbilities` / `GameplayTags` / `GameplayTasks` to `Diabolic.Build.cs`, enable the GameplayAbilities plugin, then `GenerateProjectFiles.sh` + `Build.sh DiabolicEditor Mac Development` until green. Once green, the ONE feature is `UDiabolicHitFeedbackComponent`: hitstop (2–3 frames) + camera distortion on a server-confirmed PvP hit.
+- [ ] 2. Polish (only if 1 is green): enemy stagger via an FHR hit-recovery GameplayEffect + PIE 2-client test.
+- [ ] 3. Polish (only if 1 is green): pawn + melee trace into `UDiabolicDamageExecution`.
+
+### Completed
+- Nothing completed yet. End-of-day checkmarks pending.
+
+### Protocol reminders
+- First 30 min: review + objectives. Deep work: 3–5 hrs, one feature, no Discord, no X. Then a break. Polish: 2–4 hrs. Last 20 min: commit, push, update DEVLOG, write tomorrow's bullets.
+- Green compile is the only shippable artifact.
+- Copy the project back to repo `ue/`, excluding `Binaries/`, `Intermediate/`, `Saved/` and `DerivedDataCache/`.
+
+Exact Mac commands:
+```
+# Epic Launcher → UE 5.5 → Blank C++ "Diabolic", desktop, no starter content. Close editor.
+# Copy ue/Source/Diabolic/Combat into the project. Add modules to Diabolic.Build.cs. Enable GameplayAbilities plugin.
+"/Users/Shared/Epic Games/UE_5.5/Engine/Build/BatchFiles/Mac/GenerateProjectFiles.sh" -project="$HOME/dev/Diabolic/Diabolic.uproject" -game
+"/Users/Shared/Epic Games/UE_5.5/Engine/Build/BatchFiles/Mac/Build.sh" DiabolicEditor Mac Development -project="$HOME/dev/Diabolic/Diabolic.uproject"
+```
+
+### Tomorrow (2026-10-28)
+- _TBD at end of day. Fill in after the compile result._
