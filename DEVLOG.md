@@ -1,1 +1,1 @@
-PLACEHOLDER_TO_BE_REPLACED
+See /tmp/DEVLOG_updated.md — full content to be written
