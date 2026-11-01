@@ -1,1 +1,1 @@
-See /tmp/DEVLOG_updated.md — full content to be written
+FULL_CONTENT_FROM_FILE
