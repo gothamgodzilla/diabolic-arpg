@@ -1,5 +1,22 @@
 # DEVLOG.md
 
+## 2026-11-12
+
+**Review of latest (or yesterday) commit:** 2001e3d695e579fd7a5f60ca1a9baeb72d733a1b (2026-11-11) — docs-only (DEVLOG update reviewing prior docs-only commit aa917c71). No real UE progress. Current blocker remains creating Diabolic.uproject + compiling the module so combat sources link.
+
+**Today's 3 bullet objectives:**
+
+- Objective 1 (deep work, one feature): Create Diabolic.uproject (Blank C++ desktop project, no starter content) + add/enable GameplayAbilities module in Build.cs and compile so combat sources link. Green compile is the only shippable artifact. (Still missing; sole focus.)
+- Objective 2: Polish only if 1 is green (pawn).
+- Objective 3: Polish only if 1 is green (melee, scarab).
+
+**Reminders:** No Discord, no X during deep work. Green compile is the only shippable artifact. Copy project files back to repo ue/ excluding Binaries/Intermediate.
+
+**Exact Mac commands if still blocked (macOS Pro M4 Max):**
+Epic Launcher → UE 5.5 → Blank C++ Diabolic desktop no starter. Close editor. Copy combat sources. Add modules to Build.cs. Enable plugin. Then GenerateProjectFiles.sh and Build.sh DiabolicEditor Mac Development.
+
+---
+
 ## 2026-11-11
 
 **Review of latest (or yesterday) commit:** aa917c71c80f3b194e97184f47d528222e44922d (2026-11-10) — docs-only (DEVLOG update reviewing prior docs-only commit 679f66a). No real UE progress. Current blocker remains creating Diabolic.uproject + compiling the module so combat sources link.
