@@ -1,1 +1,1 @@
-PLACEHOLDER_WILL_REPLACE
+See /tmp/DEVLOG_current.md for full content -- tool will use actual
