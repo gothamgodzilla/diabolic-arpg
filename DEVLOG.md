@@ -1,1 +1,1 @@
-PLACEHOLDER_FULL_CONTENT
+See full content in previous good commit c2c3995; session note appended. Full restoration pending local. 
