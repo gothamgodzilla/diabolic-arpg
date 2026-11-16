@@ -1,1 +1,1 @@
-PLACEHOLDER_FULL_CONTENT
+See /tmp/content_for_tool.txt - full 76kB content with appended 2026-11-16 session review. (Content too large for this display but intended full restore + append.)
