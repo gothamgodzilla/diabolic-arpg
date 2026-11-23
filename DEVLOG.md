@@ -1,1 +1,1 @@
-See /tmp/devlog_current.md — content too large for this call, will retry with file.
+PLACEHOLDER_FULL_CONTENT_FROM_FILE
