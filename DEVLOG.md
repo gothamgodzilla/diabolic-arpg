@@ -1,5 +1,19 @@
 # DIABOLIC ARPG — DEVLOG
 
+## 2026-11-28 11:03 AM EST
+
+**Review of latest (a46eda7, 2026-11-27):** DEVLOG-only commit; files changed: DEVLOG.md. Docs-only, no UE progress. ue/ still contains only MAC_M4_BUILD.md and Source/. Blocker status: Diabolic.uproject MISSING; Diabolic.Build.cs with GameplayAbilities/GameplayTags/GameplayTasks MISSING; plugin enablement MISSING; module does not compile.
+
+### Today's objectives
+
+1. **Deep work (one feature, 3-5h):** Create Diabolic.uproject (Blank C++ desktop, no starter) + enable GameplayAbilities + Build.cs modules (GameplayAbilities, GameplayTags, GameplayTasks) + GenerateProjectFiles + Build.sh DiabolicEditor Mac Development to green compile.
+
+2. Polish (only if 1 is green, 2-4h block): pawn setup.
+
+3. Polish (only if 1 is green): melee + scarab.
+
+**Protocol:** No Discord or X during deep work. Last 20 min: commit, push, update DEVLOG, write tomorrow's bullets. Copy project back to ue/ excluding Binaries/Intermediate/Saved/DerivedDataCache.
+
 ## 2026-11-27 09:15 AM PST
 
 **Review of latest (b50fc48, 2026-11-26):** docs-only. Reviewed prior docs-only commit dd2b7f3. No UE progress. Blocker unchanged: no Diabolic.uproject exists; combat sources (AttributeSet, DamageExecution) are not linked; module does not compile.
